@@ -1,11 +1,12 @@
-/* #web_bg { */
+#web_bg {
+  background: linear-gradient(-45deg, #a1c4fd, #E0C3FC, #23a6d5, #23d5ab);
   /* 背景图像的地址（url括号里）  */
   /* background: url('/img/banner2.jpg') !important; */
   /* 背景图像不重复 */
   /* background-repeat: no-repeat; */
   /* 背景图像大小 */
   /* background-size: cover; */
-/* } */
+}
 
 /* 蓝红色渐变 */
 
