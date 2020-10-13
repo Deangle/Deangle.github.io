@@ -11,8 +11,9 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  #List||fas fa-list:
-  #  - Music || /music/ || fas fa-music
+  我的音乐: /music/ || fas fa-music
+  # 娱乐||fas fa-list:
+  #  - 音乐 || /music/ || fas fa-music
   #  - Movie || /movies/ || fas fa-video
   友情链接: /link/ || fas fa-link
   网址收藏: /stars/ || fas fa-star
@@ -633,7 +634,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -655,7 +656,7 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
+  enable: true
   publish_date:
 
 # Aside widget - Newest Comments
@@ -826,7 +827,7 @@ Flink:
   headline: 友情链接
   info_headline: 我的Blog资料
   name: Blog 名字： Deanの博客
-  address: Blog 地址： deangle.top
+  address: Blog 地址： deangle.github.io
   avatar: Blog 头像： /img/avatar.jpg
   info: Blog 简介： 一个收藏回忆与分享技术的地方！
   comment: 如果需要交换友链,请留言
