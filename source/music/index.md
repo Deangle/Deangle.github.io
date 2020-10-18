@@ -1,5 +1,5 @@
 ---
-title: Music
+title: 音乐
 date: 2020-10-12 10:45:00
 type: 'music'
 ---
