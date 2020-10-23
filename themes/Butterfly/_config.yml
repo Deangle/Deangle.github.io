@@ -12,11 +12,15 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   我的音乐: /music/ || fas fa-music
+  日常学习||fas fa-list:
+    - Vue || /vue/ || fas fa-cat
+    - 数据结构与算法 || /arithmetic/ || fas fa-coffee
+    - LeetCode刷题 || /leetCode/ || fas fa-heart
   # 娱乐||fas fa-list:
   #  - 音乐 || /music/ || fas fa-music
   #  - Movie || /movies/ || fas fa-video
   # 友情链接: /link/ || fas fa-link
-  留言板: /messageBoard/ || fas fa-link
+  留言板: /messageBoard/ || fas fa-comment-dots
 
   网址收藏: /stars/ || fas fa-star
   # 关于: /about/ || fas fa-heart
@@ -608,9 +612,21 @@ subtitle:
 # Loading Animation (加載動畫)
 preloader: false
 
+#aplayer
+aplayer: 
+  script_dir: js                      # Public 目录下脚本目录路径，默认: 'assets/js'
+  style_dir: css                         # Public 目录下样式目录路径，默认: 'assets/css'
+  #cdn: http://xxx/aplayer.min.js                # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  #style_cdn: http://xxx/aplayer.min.css         # 引用 APlayer.css 外部 CDN 地址 (默认不开启)
+  meting: true                                  # MetingJS 支持
+  #meting_api: http://xxx/api.php                # 自定义 Meting API 地址
+  #meting_cdn: http://xxx/Meing.min.js           # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+  asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
+  #externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同meting: true
+
 # aside (側邊欄)
 # --------------------------------------
-
+post_asset_folder: true
 aside:
   enable: true
   mobile: true # display on mobile
@@ -761,7 +777,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -915,7 +931,7 @@ CDN:
   # aplayer
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
-  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+  meting_js: https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js
 
   # Prism.js
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
