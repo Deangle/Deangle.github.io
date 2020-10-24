@@ -6,7 +6,7 @@ comments: false
 
 ---
 
-# [响应式原理](/2020/10/24/vue2.x源码/响应式原理/)
+# [响应式原理](/vue2.x源码/响应式原理/)
 
 <style>
   .layout_page h1 {

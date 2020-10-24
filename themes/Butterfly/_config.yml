@@ -14,7 +14,7 @@ menu:
   我的音乐: /music/ || fas fa-music
   日常学习||fas fa-list:
     - Vue2.x源码 || /vueSourceCode/ || fas fa-cat
-    - 数据结构与算法 || /arithmetic/ || fas fa-coffee
+    - 算法笔记 || /arithmetic/arithmetic/ || fas fa-coffee
     - LeetCode刷题 || /leetCode/ || fas fa-heart
   # 娱乐||fas fa-list:
   #  - 音乐 || /music/ || fas fa-music
@@ -629,19 +629,19 @@ aside:
     enable: true
     content: welcome to my blog!
   card_recent_post:
-    enable: true
+    enable: false
     limit: 5 # if set 0 will show all
     sort: date # date or updated
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    expand: true # none/true/false
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
     color: true
   card_archives:
-    enable: true
+    enable: false
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
