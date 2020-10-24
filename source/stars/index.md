@@ -29,7 +29,9 @@ comments: false
   display:block;
   float:left;
   box-shadow:0 2px 6px 0 rgba(0,0,0,.12);
-  background: transparent;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
   overflow:hidden;
 }
 
