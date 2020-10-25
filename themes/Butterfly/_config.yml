@@ -15,7 +15,7 @@ menu:
   日常学习||fas fa-list:
     - Vue2.x源码 || /vueSourceCode/ || fas fa-cat
     - 算法笔记 || /arithmetic/arithmetic/ || fas fa-coffee
-    - LeetCode刷题 || /leetCode/ || fas fa-heart
+    - LeetCode刷题 || arithmetic/leetCode/ || fas fa-heart
   # 娱乐||fas fa-list:
   #  - 音乐 || /music/ || fas fa-music
   #  - Movie || /movies/ || fas fa-video
@@ -497,7 +497,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(/img/s_banner.jpg)
+background: url(/img/s_banner1.jpg)
 
 # Show the footer background image (same as top_img)
 footer_bg: false

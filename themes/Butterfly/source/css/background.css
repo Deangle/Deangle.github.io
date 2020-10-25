@@ -60,12 +60,12 @@
   background-color: transparent;
 }
 #nav.visible {
-  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-image: linear-gradient(to right, #b49fda 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
 }
 #footer {
-  background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+  background-image: linear-gradient(to right, #b49fda 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
 }

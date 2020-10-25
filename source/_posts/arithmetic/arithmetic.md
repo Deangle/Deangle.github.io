@@ -1,9 +1,9 @@
 ---
 title: 算法笔记
 date: 2020-10-24 14:16:14
-tags: 算法
-categories: 算法
-cover: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=396728189,36320177&fm=26&gp=0.jpg'
+tags: 算法笔记
+categories: 算法笔记
+cover: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603642027213&di=278ceaaa6346de88bc433ad2dccef395&imgtype=0&src=http%3A%2F%2Ficweiliimg1.pstatp.com%2Fweili%2Fbl%2F485351490902032501.jpg'
 hide: true
 ---
 
