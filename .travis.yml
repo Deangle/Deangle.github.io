@@ -14,7 +14,7 @@ before_install:
 - export PATH=$HOME/.yarn/bin:$PATH
 - npm install -g hexo-cli
 # 下载 gulp
-- npm install --save-dev gulp
+- npm install gulp -g
 install:
 - yarn
 #- gulp
