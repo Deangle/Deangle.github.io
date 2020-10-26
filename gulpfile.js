@@ -4,7 +4,7 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
 var imagemin = require('gulp-imagemin');
-var babel = require('gulp-babel');
+// var babel = require('gulp-babel');
 
 // 压缩css文件
 gulp.task('minify-css', function (done) {
@@ -33,19 +33,19 @@ gulp.task('minify-html', function (done) {
 });
 
 // 压缩js文件
-gulp.task('minify-js', function (done) {
-  return gulp
-    .src(['./public/**/*.js', '!./public/**/*.min.js'])
-    .pipe(
-      babel({
-        //将ES6代码转译为可执行的JS代码
-        presets: ['es2015'], // es5检查机制
-      })
-    )
-    .pipe(uglify())
-    .pipe(gulp.dest('./public'));
-  done();
-});
+// gulp.task('minify-js', function (done) {
+//   return gulp
+//     .src(['./public/**/*.js', '!./public/**/*.min.js'])
+//     .pipe(
+//       babel({
+//         //将ES6代码转译为可执行的JS代码
+//         presets: ['es2015'], // es5检查机制
+//       })
+//     )
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./public'));
+//   done();
+// });
 
 // 压缩 public/images 目录内图片(Version<3)
 // gulp.task('minify-images', function () {
@@ -86,7 +86,7 @@ gulp.task('minify-images', function (done) {
 gulp.task(
   'default',
   gulp.series(
-    gulp.parallel('minify-html', 'minify-css', 'minify-js', 'minify-images')
+    gulp.parallel('minify-html', 'minify-css', 'minify-images')
   ),
   function () {
     console.log('----------gulp Finished----------');
