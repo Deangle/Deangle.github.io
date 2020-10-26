@@ -78,3 +78,57 @@ hide: true
       console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3])); // [4,0,1,1,3]
       console.log(smallerNumbersThanCurrent([7, 7, 7, 7])); // [0,0,0,0]
 ```
+
+# 1480. 一维数组的动态和
+
+```
+      /*
+      给你一个数组 nums 。数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。
+
+      请返回 nums 的动态和。
+
+      示例 1：
+
+      输入：nums = [1,2,3,4]
+      输出：[1,3,6,10]
+      解释：动态和计算过程为 [1, 1+2, 1+2+3, 1+2+3+4] 。
+      示例 2：
+
+      输入：nums = [1,1,1,1,1]
+      输出：[1,2,3,4,5]
+      解释：动态和计算过程为 [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1] 。
+      示例 3：
+
+      输入：nums = [3,1,2,10,1]
+      输出：[3,4,6,16,17]
+       
+
+      提示：
+
+      1 <= nums.length <= 1000
+      -10^6 <= nums[i] <= 10^6
+    */
+
+      /**
+       * @param {number[]} nums
+       * @return {number[]}
+       */
+      /*
+        nums 输出的第一个值不变，输出的第二个值等于第一个和第二个的值
+        第三个值等于输出数组中第二个和第三个的值（相当于原数组前三个的和）
+        以此类推，一直递增
+      */
+      var runningSum = function (nums) {
+        // 是否需要原地修改 nums
+        // 如果不能原地修改, 就需要额外的数组空间
+        // const sum = [nums[0]]
+        for (let i = 1, len = nums.length; i < len; i++) {
+          // sum[i] = sum[i - 1] + nums[i]
+          nums[i] += nums[i-1]
+        }
+        return nums;
+      };
+
+      console.log(runningSum((nums = [1, 2, 3, 4]))); // [1,3,6,10]
+      console.log(runningSum((nums = [1, 1, 1, 1, 1]))); // [1,2,3,4,5]
+```
