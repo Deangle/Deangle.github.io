@@ -132,3 +132,75 @@ hide: true
       console.log(runningSum((nums = [1, 2, 3, 4]))); // [1,3,6,10]
       console.log(runningSum((nums = [1, 1, 1, 1, 1]))); // [1,2,3,4,5]
 ```
+
+# 二叉树的前序遍历
+
+```
+      /*
+      给定一个二叉树，返回它的 前序 遍历。
+
+       示例:
+
+        输入: [1,null,2,3]
+          1
+            \
+            2
+            /
+          3
+
+        输出: [1,2,3]
+        进阶: 递归算法很简单，你可以通过迭代算法完成吗？
+    */
+
+      /**
+       * Definition for a binary tree node.
+       * function TreeNode(val, left, right) {
+       *     this.val = (val===undefined ? 0 : val)
+       *     this.left = (left===undefined ? null : left)
+       *     this.right = (right===undefined ? null : right)
+       * }
+       */
+      /**
+       * @param {TreeNode} root
+       * @return {number[]}
+       */
+      // 前序遍历：对于二叉树中的任意一个节点，先打印该节点，然后是左子树，然后是右子树
+      // 中序遍历：对于二叉树中的任意一个节点，先打印左子树，然后是该节点，然后是右子树
+      // 后序遍历：对于二叉树中的任意一个节点，先打印左子树，然后是右子树，然后是该节点
+
+      // 前序遍历
+      // var preorderTraversal = function (root) {
+      //   const resultArr = [];
+      //   const TreeNode = (root) => {
+      //     if (root) {
+      //       resultArr.push(root.val);
+      //       TreeNode(root.left);
+      //       TreeNode(root.right);
+      //     }
+      //   };
+      //   TreeNode(root);
+      //   return resultArr;
+      // };
+
+      // 迭代实现
+      var preorderTraversal = function (root) {
+        const resultArr = [];
+        const stack = [];
+        // 先让根节点入栈
+        if (root) stack.push(root);
+        while (stack.length > 0) {
+          const currentTree = stack.pop();
+          // 首先根节点出栈
+          if (currentTree) resultArr.push(currentTree.val);
+          // 因为栈是先入后出，所以先操作右子树，再操作左子树
+          if (currentTree && currentTree.right) {
+            stack.push(currentTree.right);
+          }
+          if (currentTree && currentTree.left) {
+            stack.push(currentTree.left);
+          }
+        }
+        return resultArr;
+      };
+      console.log(preorderTraversal([1, null, 2, 3])); // [1,2,3]
+```
