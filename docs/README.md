@@ -6,7 +6,7 @@ tagline: null
 bgImage: '/bg.jpg'
 navbar: false
 actionText: Let's go
-actionLink: 'https://deangle.top'
+actionLink: 'https://www.deangle.top'
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
